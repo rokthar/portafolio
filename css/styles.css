@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --darkBack1: #1b263b;
+    --darkBack2: #212f45;
+    --primaryTitle: #ffd166;
+    --ilumBack: #555b6e;
+}
+body{
+    background-color: #F2F3F4 !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Press Start 2P', cursive;
+    color: var(--primaryTitle);
+}
+hr{
+    background-color: #fafafa;
+}
+li{
+    color: #fafafa;
+    font-family: 'Open Sans', sans-serif;
+}
+p, small, i{
+    font-family: 'Open Sans', sans-serif;
+    color: #fafafa;
+}
+section{
+    margin-bottom: 3%;
+}
+/* 
+    verde oscuro: 195159
+    verde claro: 54a7a7
+    rojo: cb646a
+    amarillo: f6df6f
+*/
+.relleno{
+    color: #f6df6f;
+}
+.no-relleno{
+    color: #fafafa;
+}
+.banner{
+    background-color: var(--darkBack1);
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.banner img{
+    margin-left: 40%;
+}
+.banner .textoBanner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -70%);
+}
+.textoBanner h1{
+    font-size: 37px;
+    margin-bottom: 2%;
+}
+.textoBanner a{
+    margin-top: 2%;
+    padding: 3%;
+    color: var(--primaryTitle);
+    border-radius: 50px;
+    border: var(--primaryTitle) 1px solid;
+    text-decoration: none;
+}
+.textoBanner a:hover{
+    color: var(--darkBack1);
+    background-color: var(--primaryTitle);
+}
+.logo{
+    width: 100%;
+    background-color: var(--darkBack2);
+    text-align: center;
+}
+.logo img{
+    width: 50%;
+    margin-top: 25%;
+}
+.logo h1{
+    font-size: 50px;
+}
+.logo p{
+    color: #fafafa;
+}
+.logo i{
+    color: #fafafa;
+    font-size: 25px;
+    margin-left: 2%;
+}
+
+/* PERSONAL ************************************************************************************** */
+.personal{
+    overflow: hidden;
+}
+.personal .foto{
+    padding: 0%;
+}
+.personal .foto img{
+    width: 100%;
+}
+.personal .informacion{
+    background-color: var(--darkBack2);
+    padding: 3%;
+    overflow: hidden;
+}
+
+/* HABILIDADES ************************************************************************************** */
+.habilidades .skills{
+    background-color: var(--darkBack1);
+    padding: 2%;
+}
+.habilidades .skills .skill{
+    background-color: var(--ilumBack);
+    display: flex;
+    align-items: center;
+    width: 440px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.habilidades .skills .skill .img{
+    width: 50px;
+    float: left;
+    margin: 2%;
+}
+.name-skill{
+    float: left;
+    margin-right: 2%;
+}
+.name-skill h2{
+    margin-block-end: 0%;
+}
+.habilidades .grafica{
+    padding: 0%;
+    background-color: var(--ilumBack);
+}
+.habilidades .grafica img{
+    width: 100%;
+}
+.skill .img i{
+    font-size: 40px;
+}
+
+/* MAIN PROYECTOS ************************************************************************************** */
+.card{
+    background-color: var(--darkBack1) !important;
+}
+.card-text{
+    text-align: justify;
+}
+.proyectosMain .item{
+    padding: 0.5%;
+    position: relative;
+    display: inline-block;
+}
+.proyectosMain .item img{
+    width: 100%;
+}
+.front img{
+    background-color: var(--ilumBack);
+    height: 250px;
+    padding: 2%;
+}
+.proyectosMain .textItem{
+    background-color: var(--darkBack1);
+    padding: 3%;
+    text-align: center;
+    width: 100%;
+    height: 320px;
+}
+.textItem a{
+    text-decoration: none;
+}
+.textItem p, li{
+    text-align: justify;
+}
+.textItem i{
+    margin-right: 2%;
+    font-size: 20px;
+}
+
+/* SKILLS PERSONALES */
+.skills-personales{
+    background-color: var(--darkBack2);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.skills-personales .skill .sk{
+    background-color: var(--ilumBack);
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+.skills-personales .skill .img{
+    margin-right: 1%;
+}
+
+/* PROYECTOS ************************************************************************************** */
+.proyectos .other-projects{
+    background-color: var(--darkBack1);
+}
+.design-projects{
+    overflow: hidden;
+}
+.proyectos .design-projects{
+    background-color: var(--darkBack2);
+}
+.project{
+    padding: 3%;
+}
+.project .img img{
+    width: 100%;
+}
+.project .img i{
+    font-size: 100px;
+}
+.name-skill p{
+    text-align: justify;
+    font-size: 15px;
+}
+.project i{
+    font-size: 20px;
+}
+/* FOOTER ************************************************************************************** */
+.footer{
+    background-color: var(--darkBack1);
+    margin-bottom: 0%;
+}
+.footer p{
+    padding: 1%;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .textoBanner {
+        transform: translate(-50%, -50%);
+    }
+    .textoBanner h1{
+        font-size: 23px !important;
+    }
+    .logo img{
+        margin-top: 5%;
+    }
+    .logo .redes{
+        margin-bottom: 5%;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .textoBanner {
+        transform: translate(-80%, -70%) !important;
+    }
+    .textoBanner h1{
+        font-size: 30px;
+    }
+}
